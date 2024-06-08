@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="part1" class="part">
+        <h1>Happy Birthday! Mariyam✨</h1>
+        <button onclick="showPart2()">Click Here</button>
+    </div>
+    
+    <div id="part2" class="part hidden">
+        <h2>Are you ready to make your birthday special?</h2>
+        <button onclick="showPart3()">Ohh! What's that</button>
+    </div>
+    
+    <div id="part3" class="part hidden">
+        <h2>Hey! Let's see...</h2>
+        <button onclick="showLoading()">Okay</button>
+    </div>
+    
+    <div id="loading" class="part hidden">
+        <h2>Loading...</h2>
+        <div class="loader"></div>
+    </div>
+
+    <div id="videoContainer" class="part hidden">
+        <video id="birthdayVideo" class="video" controls>
+            <source src="C:\Users\GOKUL\Desktop\Bday\edits.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div id="finalMessage" class="part hidden">
+        <h2>Once again, Happy Birthday! Mariyam! 🎉</h2>
+        <h3>Wishing you a day filled with happiness and a year filled with joy!</h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
